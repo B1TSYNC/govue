@@ -17,7 +17,7 @@ COPY . .
 
 RUN go build -o ./run .
 
-FROM alpine:latest
+FROM alpine:3.18.3
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 
